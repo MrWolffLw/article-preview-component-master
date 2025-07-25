@@ -1,28 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
   <title>Frontend Mentor | Article preview component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .img-bg {
+      width: 100%;
+      
+    }
+    html{
+      background-color: rgb(133, 213, 213);
+    }
+    body{
+      width: 85%;
+      border-radius: 20px;
+      margin-left: 100px;
+      
+    }
+   .container{
+    
+    margin-top: 150px;
+   }
+   .icone {
+    right: 15%;
+   }
   </style>
 </head>
+
 <body>
 
   <div class="container">
-    <img src="article-preview-component-master\images\drawers.jpg" alt="">
+    <div class="row">
+      <div class="col-4 p-0 m-0">
+        <img class="img-bg object-fit-cover rounded-start-4" src="/article-preview-component-master/images/drawers.jpg" alt="">
+
+      </div>
+      <div class="col-8">
+        <h2 class="fs-3 p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, autem provident, accusantium aut, vero a
+          qui velit voluptatum tempora </h2>
+        <p class="ps-3 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi explicabo error adipisci. Obcaecati voluptatum
+          autem reprehenderit sunt excepturi aut et ipsam consequatur, repudiandae, dolor atque. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <p class="icone text-end fs-2 position-absolute"><i class="fa-solid fa-share"></i></p>
+          <div class=" align-items-center d-flex p-3">
+            <img src="/article-preview-component-master/images/avatar-michelle.jpg" 
+            class="rounded-circle me-3" width="50" height="50" alt="Michelle Appleton">
+            <div>
+              <h2 class="fs-5 mb-0">Michelle Appleton</h2>
+              <time class="fs-6 text-muted">28 juin 2020</time>
+              
+            </div>
+      </div>
+
+    </div>
+
   </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
